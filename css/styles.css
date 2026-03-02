@@ -27,7 +27,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -56,7 +56,8 @@ a {
     letter-spacing: 0.04em;
 }
 
-ul, ol {
+ul,
+ol {
     font-size: inherit;
     font-family: inherit;
     list-style-type: none;
@@ -84,10 +85,24 @@ img {
     height: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    line-height: inherit;
+}
+
 /* #endregion */
 
 /* #region Common */
@@ -110,6 +125,7 @@ h1, h2, h3, h4, h5, h6, p {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
 }
+
 /* #endregion */
 
 /* #region Logo */
@@ -136,6 +152,7 @@ span.logo-right-part {
     border-bottom: 1px solid var(--cornflower);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -145,6 +162,7 @@ span.logo-right-part {
     justify-content: space-between;
     align-items: center;
 }
+
 .navigation {
     font-weight: 500;
     color: var(--navy-blue);
@@ -157,11 +175,13 @@ span.logo-right-part {
     gap: 40px;
     row-gap: 12px;
 }
+
 .menu {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
+
 .menu-link {
     display: block;
     font-size: var(--font-size);
@@ -213,6 +233,7 @@ span.logo-right-part {
 .address-link:active {
     color: var(--ocean);
 }
+
 /* #endregion */
 
 /* #region  Hero*/
@@ -249,10 +270,12 @@ span.logo-right-part {
     line-height: 1.5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--ocean);
 }
+
 /* #endregion */
 
 /* #region  Our Features*/
@@ -260,12 +283,14 @@ span.logo-right-part {
     padding: 120px 0;
 
 }
+
 .features-list {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .feature-item {
     flex-basis: calc((100% - 24px * 3) / 4);
 }
@@ -274,9 +299,11 @@ span.logo-right-part {
     color: var(--navy-blue);
     margin-bottom: 8px;
 }
+
 .feature-item-description {
     color: var(--slate);
 }
+
 .feature-icon {
     border: 1px solid var(--light-slate);
     border-radius: 4px;
@@ -288,6 +315,7 @@ span.logo-right-part {
     justify-content: center;
     align-items: center;
 }
+
 /* #endregion */
 
 /* #region Our Team*/
@@ -296,6 +324,7 @@ span.logo-right-part {
     color: var(--navy-blue);
     padding: 120px 0;
 }
+
 .team-title {
     text-align: center;
     text-transform: capitalize;
@@ -320,6 +349,7 @@ span.logo-right-part {
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
 .team-member-name {
     text-align: center;
     color: var(--navy-blue);
@@ -340,6 +370,7 @@ span.logo-right-part {
     flex-wrap: wrap;
     margin-top: 8px;
 }
+
 .team-member-social-link {
     background-color: var(--iris);
     display: flex;
@@ -390,6 +421,7 @@ span.logo-right-part {
     position: relative;
     overflow: hidden;
 }
+
 /* img overlay */
 .portfolio-item-overlay {
     position: absolute;
@@ -405,6 +437,7 @@ span.logo-right-part {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-item:hover .portfolio-item-overlay {
     transform: translateY(0);
 }
@@ -424,6 +457,7 @@ span.logo-right-part {
     color: var(--navy-blue);
     margin-bottom: 8px
 }
+
 /* #endregion */
 
 /* #region  Footer*/
@@ -437,6 +471,7 @@ span.logo-right-part {
     justify-content: flex-start;
     align-items: baseline;
 }
+
 .footer-info {
     margin-right: 120px;
 }
@@ -444,6 +479,7 @@ span.logo-right-part {
 .footer-description {
     width: 264px;
 }
+
 .page-footer,
 .page-footer span.logo-right-part {
     background-color: var(--navy-blue);
@@ -483,6 +519,7 @@ span.logo-right-part {
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--green);
@@ -494,3 +531,277 @@ span.logo-right-part {
 
 /* #endregion */
 
+/* #region Subscribe Form */
+.subscribe {
+    margin-left: auto;
+}
+
+.subscribe-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.subscribe-input {
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: var(--navy-blue);
+    padding: 8px 16px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-input:focus-visible {
+    border-color: var(--green);
+}
+
+.subscribe-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--white);
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+
+    color: var(--white);
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background-color: var(--iris);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--green);
+}
+
+
+.subscribe-button .icon {
+    fill: var(--white)
+}
+
+/* #endregion */
+
+/* #region Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--navy-blue-modal);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    padding: 72px 24px 24px;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--dairy);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop:not(.is-open) .modal {
+    transform: translate(-50%, -100%);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn .icon{
+    fill: var(--navy-blue);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: var(--ocean);
+}
+.modal-close-btn:hover .icon,
+.modal-close-btn:focus .icon{
+    fill: var(--white);
+}
+/* #endregion */
+
+/* #region Order Form */
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+    margin: 32px auto 16px;
+}
+
+.order-form-field:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.order-form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: var(--light-slate);
+}
+
+.order-form-field-input-wrap {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 8px 16px; */
+    gap: 4px;
+}
+
+.order-form-field-input-wrap:focus-within {
+    border-color: var(--iris);
+}
+
+.order-form-field-input-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 18px;
+    height: 100%;
+    margin-left: 16px;
+}
+
+.order-form-field-input-wrap .icon {
+    fill: var(--navy-blue);
+}
+
+.order-form-field-input-wrap:focus-within .icon {
+    fill: var(--iris);
+}
+
+.order-form-input {
+    padding: 0;
+    border: none;
+    height: 100%;
+    flex-grow: 1;
+    padding: 8px 16px 8px 0;
+}
+
+.order-form-input:focus-visible {
+    outline: none;
+}
+
+textarea.order-form-input {
+    height: 102px;
+    resize: none;
+    background-color: var(--dairy);
+    resize: none;
+    padding: 8px 16px;
+}
+
+textarea.order-form-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: var(--navy-blue-modal);
+}
+
+.order-form-label .link {
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--iris);
+}
+
+.order-form-field input[type="checkbox"]+.order-form-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0 24px;
+}
+
+.order-form-field input[type="checkbox"] + .order-form-label .checbox-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--navy-blue-modal);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-field input[type="checkbox"] + .order-form-label .checbox-box .icon {
+    fill: transparent;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-form-field input[type="checkbox"]:checked + .order-form-label .checbox-box {
+    background-color: var(--iris);
+}
+
+.order-form-field input[type="checkbox"]:checked + .order-form-label .checbox-box .icon {
+    fill: var(--cloud);
+}
+
+/* #endregion */
