@@ -756,6 +756,7 @@ textarea.order-form-input {
     background-color: var(--dairy);
     resize: none;
     padding: 8px 16px;
+    border-radius: 4px; 
 }
 
 textarea.order-form-input::placeholder {
