@@ -715,10 +715,6 @@ span.logo-right-part {
 
 .order-form-field-input-wrap {
     position: relative;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    width: 100%;
-    min-height: 40px;
 }
 
 .order-form-field-input-wrap:focus-within {
@@ -732,10 +728,6 @@ span.logo-right-part {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--navy-blue);
-}
-
-.order-form-field-input-wrap svg.icon { 
-    top: 50%;
 }
 
 .order-form-field-input-wrap:focus-within .icon {
@@ -752,10 +744,6 @@ span.logo-right-part {
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input.order-form-input {
-    width: 100%;
 }
 
 .order-form-input:focus-visible {
@@ -812,23 +800,19 @@ textarea.order-form-input::placeholder {
     line-height: 1.17
 }
 
-.order-form-field input[type="checkbox"]+.order-form-label span.checbox-box {
-    display: inline-flex;
-}
-
-.order-form-field input[type="checkbox"] + .order-form-label .checbox-box {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.checbox-box {
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid var(--navy-blue-modal);
-    fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
 }
 
-.order-form-field input[type="checkbox"] + .order-form-label .checbox-box .icon {
+.checbox-box .icon {
     fill: transparent;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
